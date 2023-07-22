@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ece1; /* Bege claro */
+}
+
+/* Heading Styles */
+h1 {
+    color: #575757; /* Cinza escuro */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Paragraph Styles */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Message Styles */
+p.green {
+    color: #88c388; /* Verde pastel */
+}
+
+p.blue {
+    color: #8888a9; /* Azul pastel */
+}
+
+p.red {
+    color: #e85151; /* Vermelho pastel */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Novo estilo para centralizar o botão */
+form.new-game {
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Isso ajuda a centralizar verticalmente o formulário */
+}
+
+/* Input Styles */
+input[type="number"] {
+    width: 80px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #d5b5b5; /* Cinza claro */
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #c7d9eb; /* Azul claro */
+    color: #333333; /* Preto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; /* Adicionando a propriedade flex */
+    justify-content: center; /* Centralizando horizontalmente */
+}
+
+/* Estilização do botão ao passar o mouse */
+button:hover {
+    background-color: #8eb1d9; /* Azul mais escuro */
+}
+
+/* Estilização de feedback de acerto ou erro */
+.correct-feedback, .wrong-feedback {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Animação de destaque na mensagem de acerto */
+.correct-feedback {
+    color: #0e400e; /* Verde mais escuro */
+    animation: highlight 1s infinite alternate;
+}
+
+/* Animação de destaque na mensagem de erro */
+.wrong-feedback {
+    color: #b62c2c; /* Vermelho mais escuro */
+    animation: highlight 1s infinite alternate;
+}
+
+/* Animação de destaque */
+@keyframes highlight {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

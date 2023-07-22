@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" type="text/css" href="static\style.css">
+</head>
+<body>
+    <h1>Adivinhe o Número</h1>
+    <!-- Exibir o número de tentativas -->
+    <p>Tentativas: {{ data.attempts }} de {{ max_attempts }}</p>
+    <!-- Exibir mensagem de feedback -->
+    <p class="{{ data.color }}">{{ data.message }}</p>
+    
+    <!-- Formulário para adivinhar o número -->
+    <form method="POST" class="{{ form_class }}">
+        <label for="guess">Digite um número entre 0 e 5:</label>
+        <input type="number" name="guess" id="guess" min="0" max="5" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Botão "Novo Jogo" -->
+    <form method="POST">
+        <button type="submit">Novo Jogo</button>
+    </form>
+</body>
+</html>
